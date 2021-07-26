@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes raices</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylee.css">
+</head>
+<body>
+    <a href="index.html">Volver</a>
+    <header class="site-header inicio">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncio.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+            </div>
+
+        </div>
+    </header>
+    <h1>Contacto</h1>
+    <img src="img/destacada2.jpg" alt="img">
+    
+    <h2> Llena el formulario</h2>
+
+    <form class="contacto"action="">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <br>
+            <label for="Nombre">Nombre:</label>
+            <br><input type="text" id="nombre" placeholder="NOMBRE">
+            <br>
+            <br>          
+            <label for="E-mail">E-mail:</label>
+            <br><input type="email" id="email" placeholder="EMAIL">
+            <br>
+            <br>
+            <label for="Telefono">Telefono:</label>
+            <br><input type="tel" id="Telefono" placeholder="TELEFONO">
+            <br>
+            <br>
+            <label for="Mensaje">Mensaje:</label>
+            <br><textarea id="mensaje" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion sobre Propiedad</legend>
+            <label for="opciones">Vende o compra:</label>
+            <br>
+            <select id="opciones">
+                <option value="" disabled selected>-- Seleccione --</option>
+                <option value="compra">Compra</option>
+                <option value="vende">Venta</option>
+            </select>
+            <br>
+            <br>
+            <label for="Presupuesto">Presupuesto:</label>
+            <br><input type="number" min="0" max="10000" step="1000" >
+            
+        </fieldset>
+        <fieldset>
+            <legend>Contacto</legend>
+            <p>Como desea ser contactado:</p>
+            <br>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="radio" name="contacto" value="telfono" id="telefono">
+                <label for="correo"> E-mail/label>
+                <input type="radio" name="correo" value="correo" id="correo">
+            </div>
+            <p>Si eligio telefono, elija fecha y hora</p>
+            <label for="fecha" >Fecha:</label>
+            <br><input type="date"  id="fecha">
+            <br>
+            <label for="hora" >Hora:</label>
+            <br>
+            <input type="time"  id="hora" min="09:00" max="15:00">
+
+            
+            
+        </fieldset>
+        <input type="submint" value="Enviar">
+    </form>
+
+
+</body>
+</html>
